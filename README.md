@@ -34,3 +34,14 @@ void setup () {
 
 void loop () {}
 ```
+
+## Development
+Pull request are welcome. Please use the [issue manager](https://github.com/Rhomb-io/rhio-pinmap/issues) to ask any question.
+
+## Changelog
+
+**2018-10-30**
+* Initial Version 1.0.0
+
+## License
+This project is released under MIT License
