@@ -28,6 +28,9 @@
  * SOFTWARE.
  */
 
+#ifndef RHIO_PINMAP
+#define RHIO_PINMAP
+
 //*** S100_DUINO_UNO_v1_0 *********************************//
 #ifdef S100_DUINO_UNO_v1_0
   #define NMI    2
@@ -401,3 +404,5 @@
   // coming soon
 #endif
 //**** end of S200_STM32L476_v2_0 ***********************//
+
+#endif // RHIO_PINMAP
