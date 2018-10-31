@@ -5,7 +5,7 @@
  * All rights reserved.
  *
  * @author Guillermo Alonso
- * @version 1.0.0
+ * @version 1.0.2
  *
  * MIT License
  *
