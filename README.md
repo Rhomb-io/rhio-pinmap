@@ -39,11 +39,14 @@ void loop () {}
 Pull requests are welcome. Please use the [issue manager](https://github.com/Rhomb-io/rhio-pinmap/issues) to ask any question.
 
 ## Changelog
-**2018-10-30**
+**2018-10-30 - v1.0.3**
+* Fix analog lines pins on Duino Zero
+
+**2018-10-30 - 1.0.2**
 * Typo corrections
 
-**2018-10-30**
-* Initial Version 1.0.0
+**2018-10-30 - 1.0.0**
+* Initial Version
 
 ## License
 MIT License.
