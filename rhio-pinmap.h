@@ -5,7 +5,7 @@
  * All rights reserved.
  *
  * @author Guillermo Alonso
- * @version 1.0.2
+ * @version 2.0.0
  *
  * MIT License
  *
@@ -450,20 +450,285 @@
 
   #define RSTOUT       41
 #endif
-//**** end of S100_ESP32_WROOM_32_v1_0 ***********************//
+  //**** end of S100_DUINO_MEGA_v1 ***********************//
 
+  //*** S100_ESP32_v01 *********************************//
+#ifdef S100_ESP32_v01
+  #define NMI          0
+  #define INT0         34
 
-//*** S100_ESP_WROOM_02_v1_0 *********************************//
-#ifdef S100_ESP_WROOM_02_v1_0
-  // coming soon
+  #define IO0          2
+  #define IO1          4
+  #define IO2          25
+  #define IO3          26
+  #define IO4          27
+  #define IO5          32
+  #define IO6          13 // R16 must be populated/closed
+  #define IO7          0  // R14 must be populated/closed
+
+  #define LED0         33
+  #define PWM0         33
+
+  #define UART_A_RXD   RXD0
+  #define UART_A_TXD   TXD0
+  #define UART_A_RTS   22 // R12 must be populated/closed
+  #define UART_A_CTS   19 // R13 must be populated/closed
+  #define UART_B_RXD   16
+  #define UART_B_TXD   17
+  #define I2C_A_SDA    21
+  #define I2C_A_SCL    22
+  #define SPI_A_MOSI   23
+  #define SPI_A_MISO   19
+  #define SPI_A_CLK    18
+  #define SPI_A_CS0    5
+  #define QSPI_CS0     15
+  #define QSPI_MEM_CS  15 // R25 must be populated/closed
+  #define _1WIRE       12 // R22 must be populated/closed
+
+  #define SDIO_DATAO   SD0
+  #define SDIO_DATA1   SD1
+  #define SDIO_DATA2   SD2
+  #define SDIO_DATA3   SD3
+  #define SDIO_CLKCLK
+  #define SDIO_CMDCMD
+
+  #define AD0          35
+
+  #define DIFF_A_PSENSOR_VP
+  #define DIFF_A_NSENSOR_VN
+
+  #define RSTOUT       14
 #endif
-//**** end of S100_ESP_WROOM_02_v1_0 ***********************//
+  //**** end of S100_ESP32_v01 ***********************//
 
+  //*** S100_ESP32_v02 *********************************//
+#ifdef S100_ESP32_v02
+  #define NMI          0
+  #define INT0         34
 
-//*** S200_STM32L476_v2_0 *********************************//
-#ifdef S200_STM32L476_v2_0
-  // coming soon
+  #define IO0          2
+  #define IO1          4
+  #define IO2          25
+  #define IO3          26
+  #define IO4          27
+  #define IO5          13
+  #define IO6          33 // R16 must be populated/closed
+  #define IO7          15 // R14 must be populated/closed
+
+  #define LED0         12
+  #define PWM0         12
+
+  #define UART_A_RXD   RXD0
+  #define UART_A_TXD   TXD0
+  #define UART_A_RTS   22 // R12 must be populated/closed
+  #define UART_A_CTS   19 // R13 must be populated/closed
+  #define UART_B_RXD   16
+  #define UART_B_TXD   17
+  #define I2C_A_SDA    21
+  #define I2C_A_SCL    22
+  #define SPI_A_MOSI   23
+  #define SPI_A_MISO   19
+  #define SPI_A_CLK    18
+  #define SPI_A_CS0    5
+  #define QSPI_CS0     32
+  #define QSPI_MEM_CS  15 // R25 must be populated/closed
+  #define _1WIRE       33 // R22 must be populated/closed
+
+  #define SDIO_DATAO   SD0
+  #define SDIO_DATA1   SD1
+  #define SDIO_DATA2   SD2
+  #define SDIO_DATA3   SD3
+  #define SDIO_CLKCLK
+  #define SDIO_CMDCMD
+
+  #define AD0          35
+
+  #define DIFF_A_PSENSOR_VP
+  #define DIFF_A_NSENSOR_VN
+
+  #define RSTOUT       14
 #endif
-//**** end of S200_STM32L476_v2_0 ***********************//
+  //**** end of S100_ESP32_v02 ***********************//
+
+  //*** S100_ESP32_v1 *********************************//
+#ifdef S100_ESP32_v1
+  #define NMI          0
+  #define INT0         34
+
+  #define IO0          14
+  #define IO1          4
+  #define IO2          25
+  #define IO3          26
+  #define IO4          27
+  #define IO5          15 // SJ5 must be populated/closed
+  #define IO6          33 // SJ8 must be populated/closed
+  #define IO7          32 // SJ9 must be populated/closed
+
+  #define LED0         12
+  #define PWM0         12
+
+  #define UART_A_RXD   RXD0
+  #define UART_A_TXD   TXD0
+  #define UART_A_RTS   22 // R5 must be populated/closed
+  #define UART_A_CTS   19 // R4 must be populated/closed
+  #define UART_B_RXD   16
+  #define UART_B_TXD   17
+  #define I2C_A_SDA    21
+  #define I2C_A_SCL    22
+  #define SPI_A_MOSI   23
+  #define SPI_A_MISO   19
+  #define SPI_A_CLK    18
+  #define SPI_A_CS0    5
+  #define SPI_A_uSD_CS 32 // SJ10 must be populated/closed
+  #define QSPI_CS0     15 // SJ4 must be populated/closed
+  #define QSPI_MEM_CS  15 // SJ6 must be populated/closed
+  #define _1WIRE       33 // SJ7 must be populated/closed
+
+  #define AD0          35
+
+  #define DIFF_A_PSENSOR_VP
+  #define DIFF_A_NSENSOR_VN
+
+  #define RSTOUT       2
+#endif
+  //**** end of S100_ESP32_v1 ***********************//
+
+  //*** S100_ESP8266_v1 *********************************//
+#ifdef S100_ESP8266_v1
+  #define NMI          0
+  #define INT0         0 // SJ9 must be populated/closed
+
+  #define IO0          4
+  #define IO1          12 // SJ11 must be populated/closed
+  #define IO2          5
+  #define IO3          16
+
+  #define LED0         15
+  #define PWM0         15
+
+  #define UART_A_RXD   RXD
+  #define UART_A_TXD   TXD
+  #define UART_A_RTS   15 // SJ7 must be populated/closed
+  #define UART_A_CTS   13 // SJ8 must be populated/closed
+  #define UART_B_TXD   2 // SJ13 must be populated/closed
+  #define I2C_A_SDA    2
+  #define I2C_A_SCL    14 // SJ12 must be populated/closed
+  #define SPI_A_MOSI   13
+  #define SPI_A_MISO   12
+  #define SPI_A_CLK    14
+  #define SPI_A_CS0    15
+  #define _1WIRE       16 // SJ6 must be closed
+
+  #define AD0          TOUT
+
+  #define RSTOUT   5 // SJ5 must be closed
+#endif
+  //**** end of S100_ESP8266_v1 ***********************//
+
+  //*** S200_STM32L476_v1 *********************************//
+#ifdef S200_STM32L476_v1
+  #define NMI          PB1
+  #define INT0         PB3
+  #define INT1         PB7
+  #define INT2         PA15
+
+  #define IO0          PB5
+  #define IO1          PB4
+  #define IO2          PB10
+  #define IO3          PA8
+  #define IO4          PA9
+  #define IO5          PE8
+  #define IO6          PB11
+  #define IO7          PB15
+
+  #define IO8          PC13
+  #define IO9          PE7
+  #define IO10         PD10
+  #define IO11         PD11
+  #define IO12         PD12
+  #define IO13         PD13
+  #define IO14         PC3
+  #define IO15         PC2
+
+  #define LED0         PC7
+  #define PWM0         PC7
+  #define PWM1         PE9
+  #define PWM2         PD14
+  #define PWM3         PC6
+  #define PWM4         PB2
+
+  #define UART_A_RXD   PA3
+  #define UART_A_TXD   PA2
+  #define UART_A_CTS   PD3
+  #define UART_A_RTS   PD4
+  #define UART_B_RXD   PD6
+  #define UART_B_TXD   PD5
+  #define UART_C_RXD   PD9
+  #define UART_C_TXD   PD8
+
+  #define I2C_A_SDA    PB9
+  #define I2C_A_SCL    PB8
+  #define I2C_B_SDA    PB14 // R14 must be populated/closed
+  #define I2C_B_SCL    PB13 // R15 must be populated/closed
+  #define SPI_A_MOSI   PA6
+  #define SPI_A_MISO   PA7
+  #define SPI_A_CLK    PA5
+  #define SPI_A_CS0    PB6
+  #define SPI_A_CS1    PB14
+  #define SPI_A_CS2    PB13
+
+  #define QSPI_IO0     PE12
+  #define QSPI_IO1     PE13
+  #define QSPI_IO2     PE14
+  #define QSPI_IO3     PE15
+  #define QSPI_CLK     PE10
+  #define QSPI_CS0     PE11
+  #define QSPI_MEM_CS  PD7
+
+  #define _1WIRE       PB12
+  #define CAN_A_RXPD0
+  #define CAN_A_TXPD1
+
+  #define SDIO_DATAO   PC8
+  #define SDIO_DATA1   PC9
+  #define SDIO_DATA2   PC10
+  #define SDIO_DATA3   PC11
+  #define SDIO_CLKPC12
+  #define SDIO_CMDPD2
+  #define SDIO_CDNPD15
+
+  #define SAI_A_BCLK   PE5
+  #define SAI_A_LRCLK  PE4
+  #define SAI_A_SDIPE6
+  #define SAI_A_SDOPE3
+  #define SAI_A_MCLK   PE2
+
+  #define OTG_N        PA11
+  #define OTG_P        PA12
+  #define OTG_IDPA10
+
+  #define AD0          PA0
+  #define AD1          PA1
+  #define AD2          PA4
+  #define AD3          PB0
+  #define AD4          PC1
+  #define AD5          PC0
+
+  #define AD7          PC5
+  #define AD8          PC4
+
+  #define COMP_A_N     PC4
+  #define COMP_A_PPC5
+
+  #define CAPT0        PC3 // R18 must be populated/closed
+  #define CAPT1        PC2 // R19 must be populated/closed
+
+  #define SWDIO        PA13
+  #define SWCLK        PA14
+
+  #define RSTOUT       PE0
+#endif
+  //**** end of S200_STM32L476_v1 ***********************//
+
 
 #endif // RHIO_PINMAP
