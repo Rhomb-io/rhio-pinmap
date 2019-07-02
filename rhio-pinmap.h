@@ -4,16 +4,16 @@
  * Copyright (c) Tecnofingers S.L
  * All rights reserved.
  *
- * @author Guillermo Alonso
- * @version 2.0.0
+ * @author Guillermo Alonso <galonso@rhomb.io>
+ * @author Jordi Enguídanos <jenguidanos@rhomb.io>
+ * @version 2.0.0 Beta 1
  */
 
 #ifndef RHIO_PINMAP
 #define RHIO_PINMAP
 
-
-  //*** S100_DUINO_UNO_v1 *********************************//
-#ifdef S100_DUINO_UNO_v1
+//*** DUINO_UNO *********************************//
+#ifdef DUINO_UNO
   #define NMI     2
   #define INT0    3
 
@@ -44,10 +44,10 @@
 
   #define RSTOUT       A3 // SJ1 must be closed & SJ4 must be open
 #endif
-  //**** end of S100_DUINO_UNO_v1 ***********************//
+//**** end of DUINO_UNO ***********************//
 
-  //*** S100_DUINO_LEONARDO_v1 **************************//
-#ifdef S100_DUINO_LEONARDO_v1
+//*** DUINO_LEONARDO **************************//
+#ifdef DUINO_LEONARDO
   #define NMI          HWB // HWB on original Arduino Leonardo; MCU pin: PE2
   #define INT0         SS // RXLED on original Arduino Leonardo; MCU pin: PB0
 
@@ -78,10 +78,10 @@
 
   #define RSTOUT       A1
 #endif
-  //**** end of S100_DUINO_LEONARDO_v1 ***********************//
+//**** end of DUINO_LEONARDO ***********************//
 
-  //*** S200_DUINO_PRO_v1 ********************************//
-#ifdef S200_DUINO_PRO_v1
+//*** DUINO_PRO ********************************//
+#ifdef DUINO_PRO
   #include "clsPCA9555.h"// library for IO_EXPANDER required
 
   #define IOEX0        ED0
@@ -153,10 +153,10 @@
 
   #define RSTOUT8
 #endif
-  //**** end of S200_DUINO_PRO_v1 ***********************//
+//**** end of DUINO_PRO ***********************//
 
-  //*** S200_DUINO_ZERO_v1 **********************************//
-#ifdef S200_DUINO_ZERO_v1
+//*** DUINO_ZERO **********************************//
+#ifdef DUINO_ZERO
   #define NMI          4
   #define INT0         3
   #define INT1         23
@@ -205,11 +205,11 @@
   #define MUX_SW       38 // ANALOG (MULTIPLEXOR) SWITCH
   #define RSTOUT       A3 // MUX_SW=HIGH required
 #endif
-  //**** end of S200_DUINO_ZERO_v1 ***************************//
+//**** end of DUINO_ZERO ***************************//
 
 
-  //*** S200_DUINO_MEGA_v0 *********************************//
-#ifdef S200_DUINO_MEGA_v0
+//*** DUINO_MEGA_v0 *********************************//
+#ifdef DUINO_MEGA_v0
   #define NMI          2
   #define INT0         3
   #define INT1         12
@@ -318,10 +318,10 @@
 
   // #define RSTOUT      ?? // PJ3 not includded on Arduino IDE for Mega
 #endif
-  //**** end of S100_DUINO_MEGA_v0 ***********************//
+//**** end of DUINO_MEGA_v0 ***********************//
 
-  //*** S200_DUINO_MEGA_v1 *********************************//
-#ifdef S200_DUINO_MEGA_v1
+//*** DUINO_MEGA *********************************//
+#ifdef DUINO_MEGA
   #define NMI          2
   #define INT0         3
   #define INT1         12
@@ -430,10 +430,10 @@
 
   #define RSTOUT       41
 #endif
-  //**** end of S100_DUINO_MEGA_v1 ***********************//
+//**** end of DUINO_MEGA ***********************//
 
-  //*** S100_ESP32_v01 *********************************//
-#ifdef S100_ESP32_v01
+//*** ESP32_v01 *********************************//
+#ifdef ESP32_v01
   #define NMI          0
   #define INT0         34
 
@@ -479,10 +479,10 @@
 
   #define RSTOUT       14
 #endif
-  //**** end of S100_ESP32_v01 ***********************//
+//**** end of ESP32_v01 ***********************//
 
-  //*** S100_ESP32_v02 *********************************//
-#ifdef S100_ESP32_v02
+//*** ESP32_02 *********************************//
+#ifdef ESP32_02
   #define NMI          0
   #define INT0         34
 
@@ -528,10 +528,10 @@
 
   #define RSTOUT       14
 #endif
-  //**** end of S100_ESP32_v02 ***********************//
+//**** end of ESP32_02 ***********************//
 
-  //*** S100_ESP32_v1 *********************************//
-#ifdef S100_ESP32_v1
+//*** ESP32_v1 *********************************//
+#ifdef ESP32_v1
   #define NMI          0
   #define INT0         34
 
@@ -571,10 +571,10 @@
 
   #define RSTOUT       2
 #endif
-  //**** end of S100_ESP32_v1 ***********************//
+//**** end of ESP32_v1 ***********************//
 
-  //*** S100_ESP8266_v1 *********************************//
-#ifdef S100_ESP8266_v1
+//*** ESP8266 *********************************//
+#ifdef ESP8266
   #define NMI          0
   #define INT0         0 // SJ9 must be populated/closed
 
@@ -603,10 +603,10 @@
 
   #define RSTOUT   5 // SJ5 must be closed
 #endif
-  //**** end of S100_ESP8266_v1 ***********************//
+//**** end of ESP8266 ***********************//
 
-  //*** S200_STM32L476_v1 *********************************//
-#ifdef S200_STM32L476_v1
+//*** STM32L476 *********************************//
+#ifdef STM32L476
   #define NMI          PB1
   #define INT0         PB3
   #define INT1         PB7
@@ -708,7 +708,6 @@
 
   #define RSTOUT       PE0
 #endif
-  //**** end of S200_STM32L476_v1 ***********************//
-
+//**** end of STM32L476 ***********************//
 
 #endif // RHIO_PINMAP
