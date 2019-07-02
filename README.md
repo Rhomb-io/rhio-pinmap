@@ -7,46 +7,65 @@ Let's take an example. All masters have a led routed to an MCU pin. Due to hardw
 This header is also useful to know all the pins of an MCU and its equivalent in the Arduino framework. You will be able to know which pins the most common ports correspond to (SPI, I2C, UART, 1WIRE...).
 
 ## Usage
+
 ```C
 #include "Arduino.h"
-#include "SoftwareSerial.h"
 
 // List of supported MCUs. Uncomment ONLY one.
-// #define S100_DUINO_UNO_v1_0
-// #define S100_DUINO_LEONARDO_v1_0
-// #define S200_DUINO_UNO_PRO_v1_0
-// #define S200_DUINO_ZERO_v1_0
-// #define S100_DUINO_MEGA_v2_0
-// #define S100_ESP32_WROOM_32_v1_0
-// #define S100_ESP_WROOM_02_v1_0
-// #define S200_STM32L476_v2_0
+// #define DUINO_UNO
+// #define DUINO_LEONARDO
+// #define DUINO_PRO
+// #define DUINO_ZERO
+// #define DUINO_MEGA
+// #define ESP32
+// #define ESP32_v2
+// #define ESP32
+// #define ESP8266
+// #define STM32L476
 #include "rhio-pinmap.h"
 
-SoftwareSerial MySerial(SDA, SCL);
-
 void setup () {
+  // setup led pin. LED is defined in rhio-pinmap.h.
   pinMode(LED, OUT);
-  digitalWrite(LED, HIGH);
-
-  MySerial.begin(9600);
-  MySerial.println("Rhomb.io is awesome!");
+  // power off led
+  digitalWrite(LED, LOW);
 }
 
-void loop () {}
+void loop () {
+  digitalWrite(LED, HIGH);
+  delay(1000);
+  digitalWrite(LED, LOW);
+  delay(1000);
+}
+
 ```
 
 ## Development
+
 Pull requests are welcome. Please use the [issue manager](https://github.com/Rhomb-io/rhio-pinmap/issues) to ask any question.
 
+## License
+
+See `license.md`. Rhio-pinmap has been written by [Guillermo Alonso](https://github.com/orgs/Rhomb-io/people/guialonsoalb), and this repo is maintained by [Jordi Enguídanos](https://github.com/orgs/Rhomb-io/people/jenguidanos).
+
 ## Changelog
-**2018-10-30 - v1.0.3**
+
+### 2019-07-02 - v2.0.0 Beta
+
+* Remove socket type and version from macro names (S100, S200, v1, v2)
+* Added ESP32 V0 and V1
+* Added ESP8266 V1
+* Added STM32L476 v1
+* Added examples
+
+### 2018-10-30 - v1.0.3
+
 * Fix analog lines pins on Duino Zero
 
-**2018-10-30 - 1.0.2**
+### 2018-10-30 - 1.0.2
+
 * Typo corrections
 
-**2018-10-30 - 1.0.0**
-* Initial Version
+### 2018-10-30 - 1.0.0
 
-## License
-MIT License.
+* Initial Version
