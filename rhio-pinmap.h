@@ -169,6 +169,8 @@
 #define AD3 A1  // MUX_SW=HIGH required
 #define AD4 A2  // MUX_SW=HIGH required
 #define AD5 A3  // MUX_SW=HIGH required
+#define EA1 AD2
+#define EA2 AD3
 
 #define RSTOUT 8
 #endif
@@ -224,6 +226,8 @@
 #define AD2 A2  // MUX_SW=HIGH required
 #define AD3 A5  // MUX_SW=HIGH required
 #define DAC0 A0
+#define EA1 AD2
+#define EA2 AD3
 
 #define MUX_SW 38  // ANALOG (MULTIPLEXOR) SWITCH
 #define RSTOUT A3  // MUX_SW=HIGH required
@@ -331,6 +335,9 @@
 #define AD13 A13
 #define AD14 A10
 #define AD15 A4
+
+#define EA1 AD2
+#define EA2 AD3
 
 // #define COMP_P     ??  // PE2 pin not includded on Arduino IDE for original
 // Mega
