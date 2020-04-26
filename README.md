@@ -10,16 +10,6 @@ This header is also useful to know all the pins of an MCU and its equivalent in 
 ```C
 #include "Arduino.h"
 #include "SoftwareSerial.h"
-
-// List of supported MCUs. Uncomment ONLY one.
-// #define S100_DUINO_UNO_v1_0
-// #define S100_DUINO_LEONARDO_v1_0
-// #define S200_DUINO_UNO_PRO_v1_0
-// #define S200_DUINO_ZERO_v1_0
-// #define S100_DUINO_MEGA_v2_0
-// #define S100_ESP32_WROOM_32_v1_0
-// #define S100_ESP_WROOM_02_v1_0
-// #define S200_STM32L476_v2_0
 #include "rhio-pinmap.h"
 
 SoftwareSerial MySerial(SDA, SCL);
