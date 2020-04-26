@@ -69,7 +69,7 @@
 //*** S100_DUINO_LEONARDO_v1_0 **************************//
 #if defined(__AVR_ATmega32U4__) || defined(__AVR_ATmega16U4__)
 #define NMI HWB  // HWB on original Leonardo; MCU pin: PE2
-#define INT0 SS  // RXLED on original Leonardo; MCU pin: PB0
+#define _INT0 SS  // RXLED on original Leonardo; MCU pin: PB0
 
 #define IO0 4
 #define IO1 5
@@ -124,8 +124,8 @@
 #define AND_OUT 2
 #define IOEX_INT A2  // MUX_SW=LOW required
 #define NMI A0       // MUX_SW=LOW required
-#define INT0 A1      // MUX_SW=LOW required
-#define INT1 IOEX2
+#define _INT0 A1      // MUX_SW=LOW required
+#define _INT1 IOEX2
 
 #define MUX_SW 7
 #define UART_SW IOEX0
@@ -180,8 +180,8 @@
 //*** S200_DUINO_ZERO_v1_0 **********************************//
 #if defined(ARDUINO_SAMD_ZERO) && (ARDUINO_SAMD_ZERO == 1)
 #define NMI 4
-#define INT0 3
-#define INT1 23
+#define _INT0 3
+#define _INT1 23
 // #define CAPT0   ??   // PA28, pin not includded on Arduino IDE for original
 // Zero
 
@@ -242,10 +242,10 @@
 #define _INT0 3
 #define _INT1 12
 #define _INT2 11
-// #define INT3      ??  // PJ6 pin not includded on Arduino IDE for original
-// Mega #define INT4      ??  // PE6 pin not includded on Arduino IDE for
-// original Mega #define INT5      ??  // PE7 pin not includded on Arduino IDE
-// for original Mega #define INT6      ??  // PJ2 pin not includded on Arduino
+// #define _INT3      ??  // PJ6 pin not includded on Arduino IDE for original
+// Mega #define _INT4      ??  // PE6 pin not includded on Arduino IDE for
+// original Mega #define _INT5      ??  // PE7 pin not includded on Arduino IDE
+// for original Mega #define _INT6      ??  // PJ2 pin not includded on Arduino
 // IDE for original Mega
 
 #define IO0 36
@@ -359,7 +359,7 @@
 //*** S100_ESP32_WROOM_32_v1_0 *********************************//
 #if defined(ESP32) && (ESP32 == 1)
 #define NMI 0
-#define INT0 34
+#define _INT0 34
 
 #define IO0 2
 #define IO1 4
@@ -409,7 +409,7 @@
 #ifdef ESP8266
 
 #define NMI 0
-#define INT0 NMI
+#define _INT0 NMI
 
 #define IO0 4
 #define IO1 12  // SJ11 must be closed
