@@ -6,7 +6,6 @@
  *
  * @author Guillermo Alonso <galonso@rhomb.io>
  * @author Jordi Enguídanos <jenguidanos@rhomb.io>
- * @version 2.0.0 Beta 1
  * @version 2.0.0
  *
  * This program is free software: you can redistribute it and/or modify
