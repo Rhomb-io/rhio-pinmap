@@ -1,6 +1,5 @@
 /**
  * @file blink.ino
- * @author Jordi Enguídanos (jenguidanos@rhomb.io)
  * @brief Configure a software serial UART on digital pins IO6 and IO7
  */
 
@@ -11,7 +10,7 @@
 // Create a new SoftwareSerial object with IO6 and IO7
 SoftwareSerial MySerial(IO6, IO7);
 
-void setup () {
+void setup() {
   // Configure LED and turn on
   pinMode(LED, OUT);
   digitalWrite(LED, HIGH);
@@ -23,6 +22,4 @@ void setup () {
   MySerial.println("rhomb.io is awesome!");
 }
 
-void loop () {
-
-}
+void loop() {}
