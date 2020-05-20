@@ -7,7 +7,7 @@
  * @author Guillermo Alonso <galonso@rhomb.io>
  * @author Jordi Enguídanos <jenguidanos@rhomb.io>
  * @version 2.0.0 Beta 1
- 
+
  * MIT License
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -32,7 +32,7 @@
 #ifndef RHIO_PINMAP
 #define RHIO_PINMAP
 
-//*** S100_DUINO_UNO_v1_0 *********************************//
+//*** S100_DUINO_UNO *********************************//
 #if defined(__AVR_ATmega328P__) || \
     defined(__AVR_ATmega168__ || !defined(RHIO_DUINO_RPO))
 #define NMI 2
@@ -65,11 +65,11 @@
 
 #define RSTOUT A3  // SJ1 must be closed & SJ4 must be open
 #endif
-//**** end of S100_DUINO_UNO_v1_0 ***********************//
+//**** end of S100_DUINO_UNO ***********************//
 
-//*** S100_DUINO_LEONARDO_v1_0 **************************//
+//*** S100_DUINO_LEONARDO **************************//
 #if defined(__AVR_ATmega32U4__) || defined(__AVR_ATmega16U4__)
-#define NMI HWB  // HWB on original Leonardo; MCU pin: PE2
+#define NMI HWB   // HWB on original Leonardo; MCU pin: PE2
 #define _INT0 SS  // RXLED on original Leonardo; MCU pin: PB0
 
 #define IO0 4
@@ -99,10 +99,9 @@
 
 #define RSTOUT A1
 #endif
-//**** end of S100_DUINO_LEONARDO_v1_0 ***********************//
+//**** end of S100_DUINO_LEONARDO ***********************//
 
-//*** S200_DUINO_UNO_PRO_v1_0 ********************************//
-#ifdef S200_DUINO_UNO_PRO_v1_0
+//*** S200_DUINO_UNO_PRO ********************************//
 #if defined(__AVR_ATmega328P__) || \
     defined(__AVR_ATmega168__ || defined(RHIO_DUINO_RPO))
 #include "clsPCA9555.h"  // library for IO-EXPANDER required
@@ -127,7 +126,7 @@
 #define AND_OUT 2
 #define IOEX_INT A2  // MUX_SW=LOW required
 #define NMI A0       // MUX_SW=LOW required
-#define _INT0 A1      // MUX_SW=LOW required
+#define _INT0 A1     // MUX_SW=LOW required
 #define _INT1 IOEX2
 
 #define MUX_SW 7
@@ -178,9 +177,9 @@
 
 #define RSTOUT 8
 #endif
-//**** end of S200_DUINO_UNO_PRO_v1_0 ***********************//
+//**** end of S200_DUINO_UNO_PRO ***********************//
 
-//*** S200_DUINO_ZERO_v1_0 **********************************//
+//*** S200_DUINO_ZERO **********************************//
 #if defined(ARDUINO_SAMD_ZERO) && (ARDUINO_SAMD_ZERO == 1)
 #define NMI 4
 #define _INT0 3
@@ -236,7 +235,7 @@
 #define MUX_SW 38  // ANALOG (MULTIPLEXOR) SWITCH
 #define RSTOUT A3  // MUX_SW=HIGH required
 #endif
-//**** end of S200_DUINO_ZERO_v1_0 ***************************//
+//**** end of S200_DUINO_ZERO ***************************//
 
 //*** S100_DUINO_MEGA_v2_0 *********************************//
 #if defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__)
@@ -359,7 +358,7 @@
 #endif
 //**** end of S100_DUINO_MEGA_v2_0 ***********************//
 
-//*** S100_ESP32_WROOM_32_v1_0 *********************************//
+//*** S100_ESP32_WROOM_32 *********************************//
 #if defined(ESP32) && (ESP32 == 1)
 #define NMI 0
 #define _INT0 34
@@ -406,9 +405,9 @@
 
 #define RSTOUT 14
 #endif
-//**** end of S100_ESP32_WROOM_32_v1_0 ***********************//
+//**** end of S100_ESP32_WROOM_32 ***********************//
 
-//*** S100_ESP_WROOM_02_v1_0 *********************************//
+//*** S100_ESP_WROOM_02 *********************************//
 #ifdef ESP8266
 
 #define NMI 0
@@ -445,7 +444,7 @@
 #define SDIO_CLK CMD
 #define SDIO_CMD CLK
 #endif
-//**** end of S100_ESP_WROOM_02_v1_0 ***********************//
+//**** end of S100_ESP_WROOM_02 ***********************//
 
 //*** S200_STM32L476_v2_0 *********************************//
 #ifdef S200_STM32L476_v2_0
