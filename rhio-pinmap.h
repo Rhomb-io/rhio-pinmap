@@ -446,12 +446,6 @@
 #endif
 //**** end of S100_ESP_WROOM_02 ***********************//
 
-//*** S200_STM32L476_v2_0 *********************************//
-#ifdef S200_STM32L476_v2_0
-// coming soon
-#endif
-//**** end of S200_STM32L476_v2_0 ***********************//
-
 #define RH_SIM868_POWER_EN IO0
 #define RH_SIM868_POWER_KEY IO1
 #define RH_SIM868_GPS IO2
