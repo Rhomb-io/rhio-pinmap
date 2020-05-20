@@ -33,7 +33,8 @@
 #define RHIO_PINMAP
 
 //*** S100_DUINO_UNO_v1_0 *********************************//
-#if defined(__AVR_ATmega328P__) || defined(__AVR_ATmega168__)
+#if defined(__AVR_ATmega328P__) || \
+    defined(__AVR_ATmega168__ || !defined(RHIO_DUINO_RPO))
 #define NMI 2
 #define _INT0 3
 
@@ -102,6 +103,8 @@
 
 //*** S200_DUINO_UNO_PRO_v1_0 ********************************//
 #ifdef S200_DUINO_UNO_PRO_v1_0
+#if defined(__AVR_ATmega328P__) || \
+    defined(__AVR_ATmega168__ || defined(RHIO_DUINO_RPO))
 #include "clsPCA9555.h"  // library for IO-EXPANDER required
 
 #define IOEX0 ED0
