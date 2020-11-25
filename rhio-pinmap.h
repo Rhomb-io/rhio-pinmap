@@ -225,6 +225,11 @@
 
 #define MUX_SW 38  // ANALOG (MULTIPLEXOR) SWITCH
 #define RSTOUT A3  // MUX_SW=HIGH required
+
+#define RH_SERIAL_S1 Serial
+#define RH_SERIAL_S2 Serial1
+#define RH_SERIAL_DEBUG SerialUSB
+
 #endif
 //**** end of S200_DUINO_ZERO ***************************//
 
