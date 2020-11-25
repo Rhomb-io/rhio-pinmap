@@ -407,6 +407,11 @@
 #define DIFF_N SENSOR_VN
 
 #define RSTOUT 14
+
+#define RH_SERIAL_S1 Serial
+#define RH_SERIAL_S2 Serial2
+#define RH_SERIAL_DEBUG Serial
+
 #endif
 //**** end of S100_ESP32_WROOM_32 ***********************//
 
