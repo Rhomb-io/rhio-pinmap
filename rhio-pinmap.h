@@ -346,6 +346,13 @@
 #define CAPT1 49
 // #define RSTOUT   ??  // PJ3 pin not includded on Arduino IDE for original
 // Mega
+
+#define RH_SERIAL_S1 Serial
+#define RH_SERIAL_S2 Serial1
+#define RH_SERIAL_S3 Serial2
+#define RH_SERIAL_S4 Serial3
+#define RH_SERIAL_DEBUG Serial
+
 #endif
 //**** end of S100_DUINO_MEGA_v2_0 ***********************//
 
