@@ -22,7 +22,7 @@ Pull requests are welcome. Please use the [issue manager](https://github.com/Rho
 
 ## License
 
-See `license.md`. rhio-pinmap has been written by [Guillermo Alonso](https://github.com/orgs/Rhomb-io/people/guialonsoalb), and this repo is maintained by the software team fo rhomb.io.
+See `license.md`. rhio-pinmap has been written by [Guillermo Alonso](https://github.com/orgs/Rhomb-io/people/guialonsoalb), and this repo is maintained by the rhomb.io software team.
 
 ## Changelog
 
