@@ -94,6 +94,11 @@
 #define AD1 A7
 
 #define RSTOUT A1
+
+#define RH_SERIAL_S1 Serial1
+#define RH_SERIAL_S2 -1
+#define RH_SERIAL_DEBUG -1
+
 #endif
 //**** end of S100_DUINO_LEONARDO ***********************//
 
