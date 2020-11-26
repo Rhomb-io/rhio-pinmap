@@ -95,8 +95,8 @@
 
 #define RSTOUT A1
 
-#define RH_SERIAL_S1 Serial1
-#define RH_SERIAL_S2 -1
+#define RH_SERIAL_S1 Serial
+#define RH_SERIAL_S2 Serial1 
 #define RH_SERIAL_DEBUG -1
 
 #endif
