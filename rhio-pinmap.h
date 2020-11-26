@@ -58,7 +58,7 @@
 #define RSTOUT A3  // SJ1 must be closed & SJ4 must be open
 
 #define RH_SERIAL_S1 Serial
-#define RH_SERIAL_DEBUG Serial
+#define RH_SERIAL_DEBUG -1
 
 #endif
 //**** end of S100_DUINO_UNO ***********************//
