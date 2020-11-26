@@ -427,6 +427,11 @@
 //*** S100_ESP_WROOM_02 *********************************//
 #ifdef ESP8266
 
+// rhomb ESP WROOM 2 - UART upload wiring connection 
+// IO0  = NMI     -> GND
+// IO2  = SDA     -> 3V3
+// IO15 = CS0/SS  -> GND
+
 #define NMI 0
 #define _INT0 NMI
 
