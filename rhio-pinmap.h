@@ -460,7 +460,13 @@
 #define SDIO_DATA3 SD3
 #define SDIO_CLK CMD
 #define SDIO_CMD CLK
+
+#define RH_SERIAL_S1 Serial
+#define RH_SERIAL_S2 Serial1
+#define RH_SERIAL_DEBUG -1
+
 #endif
+
 //**** end of S100_ESP_WROOM_02 ***********************//
 
 #define RH_SIM868_POWER_EN IO0
