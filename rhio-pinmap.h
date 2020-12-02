@@ -95,9 +95,9 @@
 
 #define RSTOUT A1
 
-#define RH_SERIAL_S1 -1 //it compiles but doesn't show anything
+#define RH_SERIAL_S1 Serial 
 #define RH_SERIAL_S2 Serial1 
-#define RH_SERIAL_DEBUG Serial1 // It is supposed to be SerialUSB
+#define RH_SERIAL_DEBUG SerialUSB 
 
 #endif
 //**** end of S100_DUINO_LEONARDO ***********************//
