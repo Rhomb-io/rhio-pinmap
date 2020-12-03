@@ -100,8 +100,6 @@
 #define RH_UART_B -1 // Not available 
 #define RH_UART_DEBUG SerialUSB 
 
-// RH_UART_X Serial
-
 #endif
 //**** end of S100_DUINO_LEONARDO ***********************//
 
@@ -372,10 +370,9 @@
 
 #define RH_UART_A Serial
 #define RH_UART_B Serial1
+#define RH_UART_C Serial2
+#define RH_UART_D Serial3
 #define RH_UART_DEBUG Serial
-
-// RH_UART_X Serial2  
-// RH_UART_X Serial3
 
 #endif
 //**** end of S100_DUINO_MEGA_v2_0 ***********************//
