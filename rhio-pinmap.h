@@ -57,8 +57,9 @@
 
 #define RSTOUT A3  // SJ1 must be closed & SJ4 must be open
 
-#define RH_SERIAL_S1 Serial
-#define RH_SERIAL_DEBUG Serial
+#define RH_UART_A Serial
+#define RH_UART_B -1 // Not available
+#define RH_UART_DEBUG Serial
 
 #endif
 //**** end of S100_DUINO_UNO ***********************//
@@ -95,9 +96,11 @@
 
 #define RSTOUT A1
 
-#define RH_SERIAL_S1 Serial 
-#define RH_SERIAL_S2 Serial1 
-#define RH_SERIAL_DEBUG SerialUSB 
+#define RH_UART_A Serial1 
+#define RH_UART_B -1 // Not available 
+#define RH_UART_DEBUG SerialUSB 
+
+// RH_UART_X Serial
 
 #endif
 //**** end of S100_DUINO_LEONARDO ***********************//
@@ -177,8 +180,9 @@
 
 #define RSTOUT 8
 
-#define RH_SERIAL_S1 Serial
-#define RH_SERIAL_DEBUG Serial
+#define RH_UART_A Serial
+#define RH_UART_B -1 // Not available
+#define RH_UART_DEBUG Serial
 
 
 #endif
@@ -240,9 +244,9 @@
 #define MUX_SW 38  // ANALOG (MULTIPLEXOR) SWITCH
 #define RSTOUT A3  // MUX_SW=HIGH required
 
-#define RH_SERIAL_S1 Serial
-#define RH_SERIAL_S2 Serial1
-#define RH_SERIAL_DEBUG SerialUSB
+#define RH_UART_A Serial1
+#define RH_UART_B Serial
+#define RH_UART_DEBUG SerialUSB
 
 #endif
 //**** end of S200_DUINO_ZERO ***************************//
@@ -366,11 +370,12 @@
 // #define RSTOUT   ??  // PJ3 pin not includded on Arduino IDE for original
 // Mega
 
-#define RH_SERIAL_S1 Serial
-#define RH_SERIAL_S2 Serial1
-#define RH_SERIAL_S3 Serial2
-#define RH_SERIAL_S4 Serial3
-#define RH_SERIAL_DEBUG Serial
+#define RH_UART_A Serial
+#define RH_UART_B Serial1
+#define RH_UART_DEBUG Serial
+
+// RH_UART_X Serial2  
+// RH_UART_X Serial3
 
 #endif
 //**** end of S100_DUINO_MEGA_v2_0 ***********************//
@@ -422,9 +427,9 @@
 
 #define RSTOUT 14
 
-#define RH_SERIAL_S1 Serial
-#define RH_SERIAL_S2 Serial2
-#define RH_SERIAL_DEBUG Serial
+#define RH_UART_A Serial
+#define RH_UART_B Serial2
+#define RH_UART_DEBUG Serial
 
 #endif
 //**** end of S100_ESP32_WROOM_32 ***********************//
@@ -471,9 +476,9 @@
 #define SDIO_CLK CMD
 #define SDIO_CMD CLK
 
-#define RH_SERIAL_S1 Serial
-#define RH_SERIAL_S2 Serial1
-#define RH_SERIAL_DEBUG Serial
+#define RH_UART_A Serial
+#define RH_UART_B Serial1
+#define RH_UART_DEBUG Serial
 
 #endif
 
