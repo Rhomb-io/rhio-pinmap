@@ -26,6 +26,10 @@ See `license.md`. rhio-pinmap has been written by [Guillermo Alonso](https://git
 
 ## Changelog
 
+### 2020-12-10 - v2.1.0
+
+* Defined UART to Serial port relationship
+
 ### 2020-05-20 - v2.0.0
 
 * Define a master module before include the library is no longer required (Except for Duino Pro)
