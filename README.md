@@ -32,7 +32,7 @@ See `license.md`. rhio-pinmap has been written by [Guillermo Alonso](https://git
 
 ### 2020-05-20 - v2.0.0
 
-* Define a master module before include the library is no longer required (Except for Duino Pro)
+* Defining a master module before including the library is no longer required (Except for Duino Pro)
 * Added macro RHIO_DUINO_PRO for Duino Pro
 * Added macros for slave moduls SIM868 and SIM800
 * Only one version of ESP32 (last)
@@ -40,7 +40,7 @@ See `license.md`. rhio-pinmap has been written by [Guillermo Alonso](https://git
 
 ### 2019-07-02 - v2.0.0 Beta
 
-* Remove socket type and version from macro names (S100, S200, v1, v2)
+* Removed socket type and version from macro names (S100, S200, v1, v2)
 * Added ESP32 V0 and V1
 * Added ESP8266 V1
 * Added STM32L476 v1
@@ -48,7 +48,7 @@ See `license.md`. rhio-pinmap has been written by [Guillermo Alonso](https://git
 
 ### 2018-10-30 - v1.0.3
 
-* Fix analog lines pins on Duino Zero
+* Fixed analog lines pins on Duino Zero
 
 ### 2018-10-30 - 1.0.2
 
