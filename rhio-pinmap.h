@@ -7,7 +7,7 @@
  * All rights reserved.
  *
  * @author Guillermo Alonso <galonso@rhomb.io>
- * @author Jordi Enguídanos <jenguidanos@rhomb.io>
+ * @author Rhomb.io Software Team
  * @version 2.0.0
  *
  * This program is free software: you can redistribute it and/or modify
@@ -103,6 +103,13 @@
 //**** end of S100_DUINO_LEONARDO ***********************//
 
 //*** S200_DUINO_UNO_PRO ********************************//
+/*
+Please to use this master module define a macro before include the library.
+Example:
+
+    #define RHIO_DUINO_PRO 1
+    #include "rhio-pinmap.h"
+*/
 #if defined(__AVR_ATmega328P__) && defined(RHIO_DUINO_RPO)
 #include "clsPCA9555.h"  // library for IO-EXPANDER required
 

@@ -8,17 +8,17 @@ This header is also useful to know all the pins of an MCU and its equivalent in 
 
 ## Usage
 
-See the directory *examples*
+See the included examples
 
 ## How it works
 
 The library works with Arduino. It uses the same macros that Arduino defines for each microcontroller, and then, with the `defined` directive, selects the block of macros to be included.
 
-The only exception is the [Master Module Duino Pro 328P](https://rhomb.io/products/master-modules/duino-pro-328p/), which requires defining the macro `RHIO_DUINO_PRO = 1` before including the library. View exmaple [examples/blink/blink-duino-pro.ino](examples/blink/blink-duino-pro.ino)
+The only exception is the [Master Module Duino Pro 328P](https://rhomb.io/products/master-modules/duino-pro-328p/), which requires defining the macro `RHIO_DUINO_PRO = 1` before including the library.
 
 ## Development
 
-Pull requests are welcome. Please use the [issue manager](https://github.com/Rhomb-io/rhio-pinmap/issues) to ask any question.
+Pull requests are welcome on develop branch. Please use the [issue manager](https://github.com/Rhomb-io/rhio-pinmap/issues) to ask any question.
 
 ## License
 
