@@ -57,7 +57,7 @@
 #define RSTOUT A3  // SJ1 must be closed & SJ4 must be open
 
 #define RH_UART_A Serial
-#define RH_UART_B -1 // Not available
+#define RH_UART_B -1  // Not available
 #define RH_UART_DEBUG Serial
 
 #endif
@@ -95,9 +95,9 @@
 
 #define RSTOUT A1
 
-#define RH_UART_A Serial1 
-#define RH_UART_B -1 // Not available 
-#define RH_UART_DEBUG SerialUSB 
+#define RH_UART_A Serial1
+#define RH_UART_B -1  // Not available
+#define RH_UART_DEBUG SerialUSB
 
 #endif
 //**** end of S100_DUINO_LEONARDO ***********************//
@@ -178,9 +178,8 @@
 #define RSTOUT 8
 
 #define RH_UART_A Serial
-#define RH_UART_B -1 // Not available
+#define RH_UART_B -1  // Not available
 #define RH_UART_DEBUG Serial
-
 
 #endif
 //**** end of S200_DUINO_UNO_PRO ***********************//
@@ -433,7 +432,7 @@
 //*** S100_ESP_WROOM_02 *********************************//
 #ifdef ESP8266
 
-// rhomb ESP WROOM 2 - UART upload wiring connection 
+// rhomb ESP WROOM 2 - UART upload wiring connection
 // IO0  = NMI     -> GND
 // IO2  = SDA     -> 3V3
 // IO15 = CS0/SS  -> GND
