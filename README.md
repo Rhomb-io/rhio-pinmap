@@ -26,7 +26,7 @@ See `license.md`. rhio-pinmap has been written by [Guillermo Alonso](https://git
 
 ## Changelog
 
-### 2020-12-10 - v2.1.0
+### 2020-12-29 - v2.1.0
 
 * Defined UART to Serial port relationship
 
