@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Rhomb.io Duino Pinmap
  *
@@ -21,9 +23,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-
-#ifndef RHIO_PINMAP
-#define RHIO_PINMAP
 
 //*** S100_DUINO_UNO *********************************//
 #if defined(__AVR_ATmega328P__) && !defined(RHIO_DUINO_PRO)
@@ -490,5 +489,3 @@
 #define RH_SIM800_POWER_EN IO1
 #define RH_SIM800_POWER_KEY IO2
 #define RH_SIM800_GPS 0
-
-#endif  // RHIO_PINMAP
